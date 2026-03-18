@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Live Landing</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link a los estilos de SWIPERJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+</head>
+
+<body>
+    <main class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="overlay" aria-hidden="true"></div>
+        <div class="header-shadow"></div>
+        <header class="topbar">
+            <div class="logo-box" aria-label="Logo">
+                <a href="index2.html"><img src="assets/logo_image.png" alt="Logo" width="70" /></a>
+            </div>
+
+            <nav class="main-nav" aria-label="Navegacion principal">
+                <a href="#presentacion" class="active">QUIENES SOMOS</a>
+                <a href="#">PUBLICIDAD</a>
+                <a href="#">CONTACTO</a>
+                <a href="https://www.facebook.com/profile.php?id=100066842102678" aria-label="Facebook" target="_blank" class="link-fb"><div class="fb-icon"></div></a>
+                <a href="https://www.tiktok.com/@tribunadelpueblocusco" aria-label="TikTok" target="_blank" class="link-tiktok"><div class="tiktok-icon"></div></a>
+            </nav>
+
+        </header>
+
+        <section class="hero-content">
+            <h1 class="title" >ESTAMOS<br />EN VIVO</h1>
+            <p class="song-title">
+                <span class="song-title__main">TRIBUNA DEL PUEBLO con el Lic. Sandro Salcedo Dominguez</span>
+                <span class="song-note" id="song-note" aria-live="polite"></span>
+            </p>
+            <p class="subtitle" id="presentacion">¿Quienes somos?</p>
+
+            <!-- Carrusel de fotos -->
+            <!-- layout -->
+            <div class="swiper"> 
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/foto1.jpg" alt="foto 1"></div>
+                    <div class="swiper-slide"><img src="assets/foto2.jpg" alt="foto 1"></div>
+                </div>
+            </div>
+
+            <p class="description">
+                Tribuna del Pueblo es un programa informativo dedicado a difundir los acontecimientos sociales, políticos, policiales y de toda índole que son de importancia para la sociedad con noticias de ambito local, nacional e internacional.<br /><br />
+                El programa es dirigido por el Lic. Sandro S. Salcedo Domínguez, conocido popularmente como ”QARA UYA”, quien conduce este espacio noticioso junto a un equipo de profesionales de la información y con el valioso aporte de corresponsales en todas las provincias y distritos de la región Cusco.<br /><br />
+                Cabe resaltar que, además de informar en el idioma español, también transmitimos noticias en quechua, el idioma ancestral de nuestros pueblos. De esta manera, reafirmamos el derecho de nuestra población quechuahablante a informarse, opinar y participar activamente en la vida pública de la región y del país.<br /><br />
+                Comprometidos con nuestra labor periodística, buscamos ser el puente que lleve la voz del pueblo hacia las autoridades, observando, analizando y resaltando los hechos que involucran los derechos y deberes de la ciudadanía.<br /><br />
+                Escúchanos de lunes a viernes a la 1:00 p. m., en transmisión en vivo a través de radio en la ciudad del Cusco, con retransmisión en toda la región mediante diversas emisoras asociadas a esta cadena regional.
+            </p>
+        </section>
+
+        <section class="sticky-player" aria-label="Reproductor en vivo">
+            <div class="sticky-player__status">
+                <div class="sticky-player__progress">
+                    <span class="sticky-player__progress-fill"></span>
+                </div>
+                <span class="sticky-player__live">LIVE</span>
+                <span class="sticky-player__dot" aria-hidden="true"></span>
+            </div>
+
+            <div class="sticky-player__body">
+                <div class="sticky-player__transport">
+                    <button type="button" aria-label="Reproducir o pausar" class="sticky-player__play"><div class="play-button"></div></button>
+                </div>
+
+                <div class="sticky-player__volume">
+                    <button type="button" aria-label="Volumen"><div class="volume-button"></div></button>
+                    <div class="sticky-player__volume-bar">
+                        <span class="sticky-player__volume-fill"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <audio id="live-stream" preload="none"></audio>
+    <script src="player.js" defer></script>
+    <!-- Link a los scripts de SWIPERJS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</body>
+</html>
