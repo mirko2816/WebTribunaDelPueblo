@@ -98,6 +98,7 @@ body {
 	height: 100%;
 	object-fit: contain;
 	filter: drop-shadow(0 0 4px rgba(26, 23, 23, 0.4));
+	animation: rotarY 8s linear infinite;
 }
 
 .main-nav {
@@ -383,6 +384,17 @@ h1 {
 	background: var(--text-main);
 }
 
+
+/* Animaciones */
+@keyframes rotarY {
+	0% {
+		transform: perspective(600px) rotateY(0deg);
+	}
+
+	100% {
+		transform: perspective(600px) rotateY(360deg);
+	}
+}
 
 @media (max-width: 620px) {
 	.topbar {
